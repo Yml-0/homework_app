@@ -1,4 +1,4 @@
-package com.example.homeworka_app;
+package com.example.homework_app;
 
 import org.junit.Test;
 

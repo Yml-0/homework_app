@@ -1,20 +1,88 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    tools:ignore="ExtraText"
+    android:orientation = "vertical">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Это правда так"
-        android:textSize="50px"
-        android:textColor="#07004A"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_gravity = "center_horizontal"
+        android:layout_marginTop = "50dp"
+        android:text="Коэффициент а:"
+        android:textSize="30sp"
+        />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <EditText
+
+        android:id="@+id/a"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:hint="коэффициент а"
+        android:inputType="numberDecimal|numberSigned" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity = "center_horizontal"
+        android:layout_marginTop = "50dp"
+        android:text="Коэффициент в:"
+        android:textSize="30sp"
+        />
+
+    <EditText
+        android:id="@+id/b"
+        android:inputType="numberDecimal|numberSigned"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:hint="коэффициент в" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity = "center_horizontal"
+        android:layout_marginTop = "50dp"
+        android:text="Коэффициент с:"
+        android:textSize="30sp"
+        />
+
+    <EditText
+        android:id="@+id/c"
+       android:inputType="numberDecimal|numberSigned"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:hint="коэффициент с" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity = "center_horizontal"
+        android:layout_marginTop = "10dp"
+        android:textSize="30sp"
+        android:text="Корни уравнения:"
+        />
+
+    <TextView
+        android:id="@+id/x"
+        android:layout_width="338dp"
+        android:layout_height="107dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:textSize="30sp" />
+
+    <Button
+        android:layout_width="158dp"
+        android:layout_height="62dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:onClick="click"
+        android:textColor="@color/white"
+        android:text="Ответ" />
+</LinearLayout>
