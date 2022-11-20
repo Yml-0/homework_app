@@ -1,4 +1,4 @@
-package com.example.homework_app;
+package com.example.mathtrainer;
 
 import org.junit.Test;
 
