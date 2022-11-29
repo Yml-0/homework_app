@@ -1,4 +1,4 @@
-package com.example.mathtrainer;
+package com.example.registration;
 
 import org.junit.Test;
 
