@@ -1,4 +1,4 @@
-package com.example.registration;
+package com.example.listapp;
 
 import org.junit.Test;
 
